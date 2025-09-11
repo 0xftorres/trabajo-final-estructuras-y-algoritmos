@@ -4,6 +4,10 @@ Este proyecto implementa un **buscador de coincidencias aproximadas** utilizando
 
 El trabajo corresponde a la materia **Complejidad Temporal, Estructuras de Datos y Algoritmos** de la UNAJ.
 
+- **Alumno**: Federico Iván Torres
+- **Comisión**: 1
+- **Profesor**: Pablo José Iuliano
+
 ---
 
 ## 📌 Objetivo
