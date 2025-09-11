@@ -1,4 +1,4 @@
-# 📝 Trabajo Final - Complejidad Temporal, Estructuras de Datos y Algoritmos
+# Trabajo Final - Complejidad Temporal, Estructuras de Datos y Algoritmos
 
 Este proyecto implementa un **buscador de coincidencias aproximadas** utilizando un **árbol BK (Burkhard–Keller Tree)** con la **distancia de Levenshtein** como métrica.
 
@@ -31,11 +31,6 @@ En esta primera etapa se implementaron:
 
 ---
 
-## 📚 Conceptos importntes
-- **Árbol BK (Burkhard–Keller Tree):** estructura métrica para búsquedas aproximadas.  
-- **Distancia de Levenshtein:** número mínimo de operaciones (inserción, eliminación o sustitución de caracteres) necesarias para transformar una cadena en otra.  
-- **Umbral:** define el grado de tolerancia en la búsqueda. Ejemplo:  
-  - Umbral 0 → coincidencia exacta.  
   - Umbral 1 → permite una diferencia de 1 carácter.  
 
 ---
