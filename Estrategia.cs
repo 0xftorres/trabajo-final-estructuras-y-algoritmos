@@ -27,9 +27,31 @@ namespace tpfinal
 
 		public String Consulta1(ArbolGeneral<DatoDistancia> arbol)
 		{
-			string resutl = "Implementar";
-			return resutl;
-		}
+			List<String> hojas = new List<String>();
+
+			// si es hoja añado a la lista
+			if (arbol.esHoja())
+			{
+				hojas.Add(arbol.getDatoRaiz().ToString());
+			}
+
+			// si no es hoja recorro los hijos
+			else
+			{
+				foreach (var hijo in arbol.getHijos())
+				{
+                    String subHojas = "";
+
+					// sigo con los hijos (esto porque no es hoja)
+                    subHojas = Consulta1(hijo);
+
+                    // agrego a la lista todas los textos de las hojas
+					// ["txt1", "txt2", ...] + ["txt3, txt4, txt5", ...]
+                    hojas.Add(subHojas);
+				}
+            }
+			return String.Join(", ", hojas);
+        }
 
 
 		public String Consulta2(ArbolGeneral<DatoDistancia> arbol)
