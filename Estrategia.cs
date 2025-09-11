@@ -50,7 +50,7 @@ namespace tpfinal
                     hojas.Add(subHojas);
 				}
             }
-			return String.Join(", ", hojas);
+			return String.Join("\n", hojas);
         }
 
 
