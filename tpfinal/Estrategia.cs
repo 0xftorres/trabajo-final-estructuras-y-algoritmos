@@ -50,8 +50,36 @@ namespace tpfinal
 
 		public void AgregarDato(ArbolGeneral<DatoDistancia> arbol, DatoDistancia dato)
 		{
-			//Implementar
-		}
+			// calculo distancia entre el texto de la raíz y del dato
+			int distancia = CalcularDistancia(arbol.getDatoRaiz().texto, dato.texto);
+			dato.distancia = distancia; // problema 1
+
+			// verificar si hay hijos con esa distancia
+			ArbolGeneral<DatoDistancia> encontrado = null;
+            foreach (var hijo in arbol.getHijos())
+            {
+                if (hijo.getDatoRaiz().distancia == distancia) // problema 2
+				{
+					encontrado = hijo;
+					// salgo del for each
+					break;
+				}
+            }
+
+			// agrego hijo o sigo bajando el arbol
+			if (encontrado != null)
+			{
+				AgregarDato(encontrado, dato);
+			}
+			else
+			{
+				ArbolGeneral<DatoDistancia> nuevoSubarbol = new ArbolGeneral<DatoDistancia>(dato);
+				arbol.agregarHijo(nuevoSubarbol);
+
+            }
+
+
+        }
 
 		public void Buscar(ArbolGeneral<DatoDistancia> arbol, string elementoABuscar, int umbral, List<DatoDistancia> collected)
 		{
