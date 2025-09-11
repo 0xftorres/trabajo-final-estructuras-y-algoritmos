@@ -83,8 +83,28 @@ namespace tpfinal
 
 		public void Buscar(ArbolGeneral<DatoDistancia> arbol, string elementoABuscar, int umbral, List<DatoDistancia> collected)
 		{
-            //Implementar
+            // calculo distancia entre el texto de la raíz y del dato
+            int distancia = CalcularDistancia(arbol.getDatoRaiz().texto, elementoABuscar);
 
+			// si es menor al umbral la distancia entonces hay coincidencia
+			if (distancia <= umbral)
+			{
+				collected.Add(arbol.getDatoRaiz());
+			}
+
+			// recorro los hijos para encontrar mas coincidencias
+			int limiteInferior = distancia - umbral;
+			int limiteSuperior = distancia + umbral;
+            foreach (var hijo in arbol.getHijos())
+            {
+				int distanciaHijo = hijo.getDatoRaiz().distancia;
+
+				// si está dentro del umbral seguir buscando (para no tener que buscar el arbol completo))
+                if (distanciaHijo >= limiteInferior && distanciaHijo <= limiteSuperior)
+				{
+					Buscar(hijo, elementoABuscar, umbral, collected);
+				}
+            }
         }
     }
 }
