@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<None Update="datasets\dataset.csv">
+	   <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="TextFieldParserStandard" Version="1.0.0" />
   </ItemGroup>
 
