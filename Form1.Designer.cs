@@ -31,320 +31,320 @@ namespace tpfinal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.barra = new System.Windows.Forms.Panel();
-            this.btnclose = new System.Windows.Forms.PictureBox();
-            this.controles = new System.Windows.Forms.Panel();
-            this.txtDist = new System.Windows.Forms.TextBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btn_consulta3 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_consulta2 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_consulta1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtPregunta = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnNo = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.caras = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.barra.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
-            this.controles.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.caras.SuspendLayout();
-            this.SuspendLayout();
+            barra = new Panel();
+            btnclose = new PictureBox();
+            controles = new Panel();
+            txtDist = new TextBox();
+            trackBar1 = new TrackBar();
+            textBox1 = new TextBox();
+            panel6 = new Panel();
+            btn_consulta3 = new Button();
+            panel5 = new Panel();
+            btn_consulta2 = new Button();
+            panel3 = new Panel();
+            btn_consulta1 = new Button();
+            panel1 = new Panel();
+            button2 = new Button();
+            txtPregunta = new TextBox();
+            panel4 = new Panel();
+            btnNo = new Button();
+            panel2 = new Panel();
+            button1 = new Button();
+            caras = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            barra.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnclose).BeginInit();
+            controles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            caras.SuspendLayout();
+            SuspendLayout();
             // 
             // barra
             // 
-            this.barra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.barra.Controls.Add(this.btnclose);
-            this.barra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barra.Location = new System.Drawing.Point(0, 0);
-            this.barra.Name = "barra";
-            this.barra.Size = new System.Drawing.Size(1166, 35);
-            this.barra.TabIndex = 0;
-            this.barra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barra_MouseDown);
+            barra.BackColor = Color.FromArgb(0, 80, 200);
+            barra.Controls.Add(btnclose);
+            barra.Dock = DockStyle.Top;
+            barra.Location = new Point(0, 0);
+            barra.Name = "barra";
+            barra.Size = new Size(1166, 35);
+            barra.TabIndex = 0;
+            barra.MouseDown += barra_MouseDown;
             // 
             // btnclose
             // 
-            this.btnclose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(1134, 6);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(25, 25);
-            this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnclose.TabIndex = 0;
-            this.btnclose.TabStop = false;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            btnclose.Cursor = Cursors.Hand;
+            btnclose.Image = (Image)resources.GetObject("btnclose.Image");
+            btnclose.Location = new Point(1134, 6);
+            btnclose.Name = "btnclose";
+            btnclose.Size = new Size(25, 25);
+            btnclose.SizeMode = PictureBoxSizeMode.Zoom;
+            btnclose.TabIndex = 0;
+            btnclose.TabStop = false;
+            btnclose.Click += btnclose_Click;
             // 
             // controles
             // 
-            this.controles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.controles.Controls.Add(this.txtDist);
-            this.controles.Controls.Add(this.trackBar1);
-            this.controles.Controls.Add(this.textBox1);
-            this.controles.Controls.Add(this.panel6);
-            this.controles.Controls.Add(this.btn_consulta3);
-            this.controles.Controls.Add(this.panel5);
-            this.controles.Controls.Add(this.btn_consulta2);
-            this.controles.Controls.Add(this.panel3);
-            this.controles.Controls.Add(this.btn_consulta1);
-            this.controles.Controls.Add(this.panel1);
-            this.controles.Controls.Add(this.button2);
-            this.controles.Controls.Add(this.txtPregunta);
-            this.controles.Controls.Add(this.panel4);
-            this.controles.Controls.Add(this.btnNo);
-            this.controles.Controls.Add(this.panel2);
-            this.controles.Controls.Add(this.button1);
-            this.controles.Dock = System.Windows.Forms.DockStyle.Left;
-            this.controles.Location = new System.Drawing.Point(0, 35);
-            this.controles.Name = "controles";
-            this.controles.Size = new System.Drawing.Size(276, 617);
-            this.controles.TabIndex = 4;
+            controles.BackColor = Color.FromArgb(26, 32, 40);
+            controles.Controls.Add(txtDist);
+            controles.Controls.Add(trackBar1);
+            controles.Controls.Add(textBox1);
+            controles.Controls.Add(panel6);
+            controles.Controls.Add(btn_consulta3);
+            controles.Controls.Add(panel5);
+            controles.Controls.Add(btn_consulta2);
+            controles.Controls.Add(panel3);
+            controles.Controls.Add(btn_consulta1);
+            controles.Controls.Add(panel1);
+            controles.Controls.Add(button2);
+            controles.Controls.Add(txtPregunta);
+            controles.Controls.Add(panel4);
+            controles.Controls.Add(btnNo);
+            controles.Controls.Add(panel2);
+            controles.Controls.Add(button1);
+            controles.Dock = DockStyle.Left;
+            controles.Location = new Point(0, 35);
+            controles.Name = "controles";
+            controles.Size = new Size(316, 617);
+            controles.TabIndex = 4;
             // 
             // txtDist
             // 
-            this.txtDist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtDist.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDist.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDist.ForeColor = System.Drawing.Color.White;
-            this.txtDist.Location = new System.Drawing.Point(7, 102);
-            this.txtDist.Name = "txtDist";
-            this.txtDist.ReadOnly = true;
-            this.txtDist.Size = new System.Drawing.Size(87, 22);
-            this.txtDist.TabIndex = 22;
-            this.txtDist.Text = "Distancia: 0";
+            txtDist.BackColor = Color.FromArgb(26, 32, 40);
+            txtDist.BorderStyle = BorderStyle.None;
+            txtDist.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDist.ForeColor = Color.White;
+            txtDist.Location = new Point(25, 102);
+            txtDist.Name = "txtDist";
+            txtDist.ReadOnly = true;
+            txtDist.Size = new Size(87, 22);
+            txtDist.TabIndex = 22;
+            txtDist.Text = "Distancia: 0";
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(105, 102);
-            this.trackBar1.Maximum = 2;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(164, 45);
-            this.trackBar1.TabIndex = 21;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            trackBar1.Location = new Point(126, 102);
+            trackBar1.Maximum = 2;
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new Size(164, 45);
+            trackBar1.TabIndex = 21;
+            trackBar1.Scroll += trackBar1_Scroll;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(7, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 29);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.teclaPressed);
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(24, 56);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(264, 29);
+            textBox1.TabIndex = 20;
+            textBox1.KeyPress += teclaPressed;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel6.Location = new System.Drawing.Point(113, 557);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 30);
-            this.panel6.TabIndex = 19;
+            panel6.BackColor = Color.FromArgb(0, 80, 200);
+            panel6.Location = new Point(113, 557);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(10, 30);
+            panel6.TabIndex = 19;
             // 
             // btn_consulta3
             // 
-            this.btn_consulta3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btn_consulta3.FlatAppearance.BorderSize = 0;
-            this.btn_consulta3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btn_consulta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_consulta3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_consulta3.ForeColor = System.Drawing.Color.White;
-            this.btn_consulta3.Image = ((System.Drawing.Image)(resources.GetObject("btn_consulta3.Image")));
-            this.btn_consulta3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_consulta3.Location = new System.Drawing.Point(117, 557);
-            this.btn_consulta3.Name = "btn_consulta3";
-            this.btn_consulta3.Size = new System.Drawing.Size(197, 30);
-            this.btn_consulta3.TabIndex = 18;
-            this.btn_consulta3.Text = "Consulta 3";
-            this.btn_consulta3.UseVisualStyleBackColor = false;
-            this.btn_consulta3.Click += new System.EventHandler(this.btn_consulta3_Click);
+            btn_consulta3.BackColor = Color.FromArgb(26, 32, 40);
+            btn_consulta3.FlatAppearance.BorderSize = 0;
+            btn_consulta3.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btn_consulta3.FlatStyle = FlatStyle.Flat;
+            btn_consulta3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_consulta3.ForeColor = Color.White;
+            btn_consulta3.Image = (Image)resources.GetObject("btn_consulta3.Image");
+            btn_consulta3.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_consulta3.Location = new Point(117, 557);
+            btn_consulta3.Name = "btn_consulta3";
+            btn_consulta3.Size = new Size(197, 30);
+            btn_consulta3.TabIndex = 18;
+            btn_consulta3.Text = "    Consulta 3 (Niveles)";
+            btn_consulta3.UseVisualStyleBackColor = false;
+            btn_consulta3.Click += btn_consulta3_Click;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(113, 495);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 30);
-            this.panel5.TabIndex = 17;
+            panel5.BackColor = Color.FromArgb(0, 80, 200);
+            panel5.Location = new Point(113, 495);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(10, 30);
+            panel5.TabIndex = 17;
             // 
             // btn_consulta2
             // 
-            this.btn_consulta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btn_consulta2.FlatAppearance.BorderSize = 0;
-            this.btn_consulta2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btn_consulta2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_consulta2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_consulta2.ForeColor = System.Drawing.Color.White;
-            this.btn_consulta2.Image = ((System.Drawing.Image)(resources.GetObject("btn_consulta2.Image")));
-            this.btn_consulta2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_consulta2.Location = new System.Drawing.Point(117, 495);
-            this.btn_consulta2.Name = "btn_consulta2";
-            this.btn_consulta2.Size = new System.Drawing.Size(197, 30);
-            this.btn_consulta2.TabIndex = 16;
-            this.btn_consulta2.Text = "Consulta 2";
-            this.btn_consulta2.UseVisualStyleBackColor = false;
-            this.btn_consulta2.Click += new System.EventHandler(this.btn_consulta2_Click);
+            btn_consulta2.BackColor = Color.FromArgb(26, 32, 40);
+            btn_consulta2.FlatAppearance.BorderSize = 0;
+            btn_consulta2.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btn_consulta2.FlatStyle = FlatStyle.Flat;
+            btn_consulta2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_consulta2.ForeColor = Color.White;
+            btn_consulta2.Image = (Image)resources.GetObject("btn_consulta2.Image");
+            btn_consulta2.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_consulta2.Location = new Point(117, 495);
+            btn_consulta2.Name = "btn_consulta2";
+            btn_consulta2.Size = new Size(197, 30);
+            btn_consulta2.TabIndex = 16;
+            btn_consulta2.Text = "      Consulta 2 (Caminos)";
+            btn_consulta2.UseVisualStyleBackColor = false;
+            btn_consulta2.Click += btn_consulta2_Click;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(113, 431);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 30);
-            this.panel3.TabIndex = 15;
+            panel3.BackColor = Color.FromArgb(0, 80, 200);
+            panel3.Location = new Point(113, 431);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(10, 30);
+            panel3.TabIndex = 15;
             // 
             // btn_consulta1
             // 
-            this.btn_consulta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btn_consulta1.FlatAppearance.BorderSize = 0;
-            this.btn_consulta1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btn_consulta1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_consulta1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_consulta1.ForeColor = System.Drawing.Color.White;
-            this.btn_consulta1.Image = ((System.Drawing.Image)(resources.GetObject("btn_consulta1.Image")));
-            this.btn_consulta1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_consulta1.Location = new System.Drawing.Point(117, 431);
-            this.btn_consulta1.Name = "btn_consulta1";
-            this.btn_consulta1.Size = new System.Drawing.Size(197, 30);
-            this.btn_consulta1.TabIndex = 14;
-            this.btn_consulta1.Text = "Consulta 1";
-            this.btn_consulta1.UseVisualStyleBackColor = false;
-            this.btn_consulta1.Click += new System.EventHandler(this.btn_consulta1_Click);
+            btn_consulta1.BackColor = Color.FromArgb(26, 32, 40);
+            btn_consulta1.FlatAppearance.BorderSize = 0;
+            btn_consulta1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btn_consulta1.FlatStyle = FlatStyle.Flat;
+            btn_consulta1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_consulta1.ForeColor = Color.White;
+            btn_consulta1.Image = (Image)resources.GetObject("btn_consulta1.Image");
+            btn_consulta1.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_consulta1.Location = new Point(117, 431);
+            btn_consulta1.Name = "btn_consulta1";
+            btn_consulta1.Size = new Size(197, 30);
+            btn_consulta1.TabIndex = 14;
+            btn_consulta1.Text = "  Consulta 1 (Hojas)";
+            btn_consulta1.UseVisualStyleBackColor = false;
+            btn_consulta1.Click += btn_consulta1_Click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(75, 373);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 30);
-            this.panel1.TabIndex = 13;
+            panel1.BackColor = Color.FromArgb(0, 80, 200);
+            panel1.Location = new Point(75, 373);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(10, 30);
+            panel1.TabIndex = 13;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(79, 373);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 30);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Consultas";
-            this.button2.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.FromArgb(26, 32, 40);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(79, 373);
+            button2.Name = "button2";
+            button2.Size = new Size(197, 30);
+            button2.TabIndex = 12;
+            button2.Text = "Consultas";
+            button2.UseVisualStyleBackColor = false;
             // 
             // txtPregunta
             // 
-            this.txtPregunta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPregunta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPregunta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPregunta.ForeColor = System.Drawing.Color.White;
-            this.txtPregunta.Location = new System.Drawing.Point(5, 22);
-            this.txtPregunta.Name = "txtPregunta";
-            this.txtPregunta.ReadOnly = true;
-            this.txtPregunta.Size = new System.Drawing.Size(264, 22);
-            this.txtPregunta.TabIndex = 10;
-            this.txtPregunta.Text = "Buscar:";
+            txtPregunta.BackColor = Color.FromArgb(26, 32, 40);
+            txtPregunta.BorderStyle = BorderStyle.None;
+            txtPregunta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPregunta.ForeColor = Color.White;
+            txtPregunta.Location = new Point(24, 22);
+            txtPregunta.Name = "txtPregunta";
+            txtPregunta.ReadOnly = true;
+            txtPregunta.Size = new Size(264, 22);
+            txtPregunta.TabIndex = 10;
+            txtPregunta.Text = "Buscar:";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(75, 249);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 30);
-            this.panel4.TabIndex = 8;
+            panel4.BackColor = Color.FromArgb(0, 80, 200);
+            panel4.Location = new Point(75, 249);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(10, 30);
+            panel4.TabIndex = 8;
             // 
             // btnNo
             // 
-            this.btnNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnNo.FlatAppearance.BorderSize = 0;
-            this.btnNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnNo.ForeColor = System.Drawing.Color.White;
-            this.btnNo.Image = ((System.Drawing.Image)(resources.GetObject("btnNo.Image")));
-            this.btnNo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNo.Location = new System.Drawing.Point(79, 249);
-            this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(197, 30);
-            this.btnNo.TabIndex = 9;
-            this.btnNo.Text = "Limpiar";
-            this.btnNo.UseVisualStyleBackColor = false;
-            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
+            btnNo.BackColor = Color.FromArgb(26, 32, 40);
+            btnNo.FlatAppearance.BorderSize = 0;
+            btnNo.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btnNo.FlatStyle = FlatStyle.Flat;
+            btnNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnNo.ForeColor = Color.White;
+            btnNo.Image = (Image)resources.GetObject("btnNo.Image");
+            btnNo.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNo.Location = new Point(79, 249);
+            btnNo.Name = "btnNo";
+            btnNo.Size = new Size(197, 30);
+            btnNo.TabIndex = 9;
+            btnNo.Text = "Limpiar";
+            btnNo.UseVisualStyleBackColor = false;
+            btnNo.Click += btnNo_Click;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(75, 182);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 30);
-            this.panel2.TabIndex = 7;
+            panel2.BackColor = Color.FromArgb(0, 80, 200);
+            panel2.Location = new Point(75, 182);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(10, 30);
+            panel2.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(79, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 30);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            button1.BackColor = Color.FromArgb(26, 32, 40);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(79, 182);
+            button1.Name = "button1";
+            button1.Size = new Size(197, 30);
+            button1.TabIndex = 6;
+            button1.Text = "Buscar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // caras
             // 
-            this.caras.AutoScroll = true;
-            this.caras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.caras.Controls.Add(this.flowLayoutPanel1);
-            this.caras.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.caras.Location = new System.Drawing.Point(276, 35);
-            this.caras.Name = "caras";
-            this.caras.Size = new System.Drawing.Size(890, 617);
-            this.caras.TabIndex = 7;
+            caras.AutoScroll = true;
+            caras.BackColor = Color.FromArgb(49, 66, 82);
+            caras.Controls.Add(flowLayoutPanel1);
+            caras.Dock = DockStyle.Fill;
+            caras.Location = new Point(316, 35);
+            caras.Name = "caras";
+            caras.Size = new Size(850, 617);
+            caras.TabIndex = 7;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(890, 617);
-            this.flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(850, 617);
+            flowLayoutPanel1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1166, 652);
-            this.Controls.Add(this.caras);
-            this.Controls.Add(this.controles);
-            this.Controls.Add(this.barra);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "¿Quien es?";
-            this.barra.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnclose)).EndInit();
-            this.controles.ResumeLayout(false);
-            this.controles.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.caras.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1166, 652);
+            Controls.Add(caras);
+            Controls.Add(controles);
+            Controls.Add(barra);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "¿Quien es?";
+            barra.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnclose).EndInit();
+            controles.ResumeLayout(false);
+            controles.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            caras.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 
