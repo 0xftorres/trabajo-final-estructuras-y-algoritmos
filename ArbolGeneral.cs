@@ -41,6 +41,60 @@ namespace tp1
 			return this.getHijos().Count == 0;
 		}
 
+		public String recorridoPorNiveles()
+		{
+			String txt = "";
+			int nivel = 2;
+
+			if(this == null)
+			{
+				return "";
+			}
+			else
+			{
+				txt += "Nivel 1: " + this.getDatoRaiz().ToString() + "\n";
+                txt += "Nivel 2: ";
+            }
+
+			Cola<ArbolGeneral<T>> cola = new Cola<ArbolGeneral<T>>();
+			cola.encolar(this);
+			cola.encolar(null); // marcador de fin de nivel
+
+            // ejecuto mientras la cola no este vacia
+            while (!cola.esVacia())
+			{
+				ArbolGeneral<T> aux = cola.desencolar();
+
+				if(aux != null)
+				{
+                    // hay hijos por procesar
+                    foreach (var hijo in aux.getHijos())
+                    {
+                        txt += hijo.getDatoRaiz().ToString() + ", ";
+
+                        // agrego los hijos a la cola
+                        cola.encolar(hijo);
+                    }
+				}
+				else
+				{
+					nivel = nivel + 1;
+                    txt += string.Format("\nNivel {0}: ", nivel);
+                    // fin de nivel (se encontró un null)
+                    if (!cola.esVacia())
+					{
+						// si la cola no esta vacia, agrego otro null
+						// para marcar el fin del siguiente nivel.
+						// es importante porque sino se seguirían
+						// agregando nulls hasta el infinito.
+						cola.encolar(null);
+                    }
+                }
+
+            }
+			return txt;
+        }
+
 		public int altura()
 		{
 			return 0;

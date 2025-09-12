@@ -82,9 +82,7 @@ namespace tpfinal
 
         public String Consulta3(ArbolGeneral<DatoDistancia> arbol)
         {
-            string result = "Implementar";
-
-            return result;
+            return arbol.recorridoPorNiveles();
         }
 
         public void AgregarDato(ArbolGeneral<DatoDistancia> arbol, DatoDistancia dato)
