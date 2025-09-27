@@ -9,7 +9,8 @@ namespace tpfinal
     public class Estrategia
     {
         private int CalcularDistancia(string str1, string str2)
-        {
+        {   
+            /*
             // using the method
             String[] strlist1 = str1.ToLower().Split(' ');
             String[] strlist2 = str2.ToLower().Split(' ');
@@ -22,7 +23,10 @@ namespace tpfinal
                 }
             }
 
-            return distance;
+            // retorna la distancia mas pequeña entre las palabras de ambos textos
+            return distance;*/
+
+            return Utils.calculateLevenshteinDistance(str1, str2);
         }
 
         public String Consulta1(ArbolGeneral<DatoDistancia> arbol)
