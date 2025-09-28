@@ -47,13 +47,10 @@ namespace tpfinal
             List<String> recorridos = new List<String>();
 
             // Recorro los hijos
-
-            String caminoActual = arbol.getDatoRaiz().ToString();
+            String raiz = arbol.getDatoRaiz().ToString() + " -> ";
             foreach (var hijo in arbol.getHijos())
-            {
-                String raiz = arbol.getDatoRaiz().ToString() + " -> ";
+            {   
                 recorrerHastaHoja(hijo, raiz, recorridos);
-
             }
 
             return String.Join("\n", recorridos);
@@ -93,10 +90,7 @@ namespace tpfinal
             {
                 ArbolGeneral<DatoDistancia> nuevoSubarbol = new ArbolGeneral<DatoDistancia>(dato);
                 arbol.agregarHijo(nuevoSubarbol);
-
             }
-
-
         }
 
         public void Buscar(ArbolGeneral<DatoDistancia> arbol, string elementoABuscar, int umbral, List<DatoDistancia> collected)
