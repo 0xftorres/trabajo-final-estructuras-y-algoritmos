@@ -70,21 +70,21 @@ namespace tpfinal
             dato.distancia = distancia; // problema 1
 
             // verificar si hay hijos con esa distancia
-            ArbolGeneral<DatoDistancia> encontrado = null;
+            ArbolGeneral<DatoDistancia> hijo_encontrado = null;
             foreach (var hijo in arbol.getHijos())
             {
                 if (hijo.getDatoRaiz().distancia == distancia) // problema 2
                 {
-                    encontrado = hijo;
+                    hijo_encontrado = hijo;
                     // salgo del for each
                     break;
                 }
             }
 
             // agrego hijo o sigo bajando el arbol
-            if (encontrado != null)
+            if (hijo_encontrado != null)
             {
-                AgregarDato(encontrado, dato);
+                AgregarDato(hijo_encontrado, dato);
             }
             else
             {
@@ -134,9 +134,13 @@ namespace tpfinal
             {
                 foreach (var hijo in arbol.getHijos())
                 {
-                    camino += arbol.getDatoRaiz().ToString() + " -> ";
+                    // problema ocurrido: estaba modificando el camino del
+                    // parámetro entonces se duplicaba la raiz en
+                    // el output. se arregló generando una nueva
+                    // variable por cada iteración.
+                    String nuevo_camino = camino + arbol.getDatoRaiz().ToString() + " -> ";
 
-                    recorrerHastaHoja(hijo, camino, recorridos);
+                    recorrerHastaHoja(hijo, nuevo_camino, recorridos);
                 }
             }
         }
