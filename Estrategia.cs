@@ -9,23 +9,7 @@ namespace tpfinal
     public class Estrategia
     {
         private int CalcularDistancia(string str1, string str2)
-        {   
-            /*
-            // using the method
-            String[] strlist1 = str1.ToLower().Split(' ');
-            String[] strlist2 = str2.ToLower().Split(' ');
-            int distance = 1000;
-            foreach (String s1 in strlist1)
-            {
-                foreach (String s2 in strlist2)
-                {
-                    distance = Math.Min(distance, Utils.calculateLevenshteinDistance(s1, s2));
-                }
-            }
-
-            // retorna la distancia mas pequeña entre las palabras de ambos textos
-            return distance;*/
-
+        {
             return Utils.calculateLevenshteinDistance(str1, str2);
         }
 
@@ -62,23 +46,16 @@ namespace tpfinal
         {
             List<String> recorridos = new List<String>();
 
-            // si es hoja añado a la lista
-            if (arbol.esHoja())
+            // Recorro los hijos
+
+            String caminoActual = arbol.getDatoRaiz().ToString();
+            foreach (var hijo in arbol.getHijos())
             {
-                return "";
+                String raiz = arbol.getDatoRaiz().ToString() + " -> ";
+                recorrerHastaHoja(hijo, raiz, recorridos);
+
             }
 
-            // si no es hoja recorro los hijos
-            else
-            {
-                String caminoActual = arbol.getDatoRaiz().ToString();
-                foreach (var hijo in arbol.getHijos())
-                {
-                    String raiz = arbol.getDatoRaiz().ToString() + " -> ";
-                    recorrerHastaHoja(hijo, raiz, recorridos);
-
-                }
-            }
             return String.Join("\n", recorridos);
         }
 
